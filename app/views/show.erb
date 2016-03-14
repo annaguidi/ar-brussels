@@ -1,0 +1,11 @@
+<h1>Recipes and Comments</h1>
+<h2> <%= @recipe.name %></h2>
+<ul>
+    <% @comments.each do |comment| %>
+    <li> <%= comment.title %> </li>
+    <li> <%= comment.body %> </li>
+    <% end %>
+</ul>
+
+
+  <a href="/">HOME</a>
